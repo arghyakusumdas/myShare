@@ -113,7 +113,7 @@
              }
              .buttonJoin {
                  display: block;
-                 background-color: #4A9CA8;
+                 background-color: #461D7C;
                  color: white;
                  padding: 16px 10px;
                  width: 100%;
@@ -125,10 +125,10 @@
                  font-size: 17px;
              }
             .ButonTemplate.active {
-                background-color: #317194;
+                background-color: #461D7C;
             }
             .ButonTemplate:hover {
-                background-color: #317194;
+                background-color: #461D7C;
             }
             .ButtonTemplate.disabled {
                 background-color: gray;
@@ -170,7 +170,7 @@
         </table>
         </header>
         <table id="rooms-list">
-            <tr><td><input type="text" id="user-name" class="textMaximize" placeholder="Your Name"></td> <td><button class="ButonTemplate" id="share-screen">Share Screen</button></td></tr>
+            <tr><td><input type="text" id="user-name" class="textMaximize" placeholder="Your Name"></td> <td><button class="ButonTemplate" id="share-screen">Share screen</button></td></tr>
         </table>
         <!--<table id="rooms-list"></table>-->
         <div id="videos-container" style="overflow:auto; height:400px;width:100%; background-color:#f1f1f1; border-style:solid; border-color:#461D7C; border-width:3px"></div>
@@ -227,7 +227,7 @@
                     tr.id = _screen.userid; 
                     tr.innerHTML = '<td>' + _screen.userid + ' shared his screen.</td>' +
                             '<td><button class="buttonJoin">View screen</button></td>' +
-                            '<td><a href="https://github.com" target="_blank">See in a new window</a></td>';
+                            
                     roomsList.insertBefore(tr, roomsList.firstChild);
                     var button = tr.querySelector('.buttonJoin');
                     button.setAttribute('data-userid', _screen.userid);
